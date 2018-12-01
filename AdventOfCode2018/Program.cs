@@ -1,4 +1,4 @@
-﻿using AdventOfCode2018.Services;
+﻿using AdventOfCode2018.Helpers;
 using System;
 
 namespace AdventOfCode2018

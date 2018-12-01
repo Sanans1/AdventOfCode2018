@@ -1,9 +1,10 @@
-﻿using System;
+﻿using AdventOfCode2018.Helpers;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace AdventOfCode2018.Services
+namespace AdventOfCode2018.Puzzles
 {
     public static class Day1Puzzles
     {

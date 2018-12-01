@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AdventOfCode2018.Services
+namespace AdventOfCode2018.Helpers
 {
     public static class PuzzlePicker
     {
@@ -20,8 +20,6 @@ namespace AdventOfCode2018.Services
             while (!isSuccessful)
             {
                 userInput = Console.ReadLine();
-
-                //if (userInput)
 
                 try
                 {
