@@ -11,19 +11,13 @@ namespace AdventOfCode2018.Puzzles
         public static void Puzzle1()
         {
             int answer = 0;
-            string[] userInput;
+            string[] userInput = FileReader.MultiLineReader(); 
 
-            userInput = FileReader.MultiLineReader();
-
-            while (true)
+            foreach (string numberOperation in userInput)
             {
-                foreach (string numberOperation in userInput)
-                {
-                    answer += int.Parse(numberOperation);
-                }
-                break;
+                answer += int.Parse(numberOperation);
             }
-
+            
             Program.AnswerDisplay(answer.ToString());
         }
 
@@ -31,10 +25,8 @@ namespace AdventOfCode2018.Puzzles
         {
             int answer = 0;
             bool isSuccessful = false;
-            string[] userInput;
+            string[] userInput = FileReader.MultiLineReader();
             HashSet<int> frequencyList = new HashSet<int>();
-
-            userInput = FileReader.MultiLineReader();
 
             while (!isSuccessful)
             {

@@ -12,7 +12,7 @@ namespace AdventOfCode2018.Helpers
         {
             string userInput;
             int daysParsed = 0;
-            int daysSolvable = 1;
+            int daysSolvable = 2;
             bool isSuccessful = false;
 
             Console.WriteLine("\nPlease tell me which day's puzzles you'd like to solve or press Esc to exit!");
@@ -78,7 +78,7 @@ namespace AdventOfCode2018.Helpers
             int dayPicked = DayPick();
             int puzzlePicked = PuzzlePick();
 
-            Type dayClass = Type.GetType("AdventOfCode2018.Services.Day" + dayPicked + "Puzzles");
+            Type dayClass = Type.GetType("AdventOfCode2018.Puzzles.Day" + dayPicked + "Puzzles");
             MethodInfo puzzleMethod = dayClass.GetMethod("Puzzle" + puzzlePicked);
             puzzleMethod.Invoke(null, null);
         }
