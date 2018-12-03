@@ -8,7 +8,7 @@ namespace AdventOfCode2018
         static void Main(string[] args)
         {
             Console.WriteLine("Hi!");
-            PuzzlePicker.PuzzleSwitch();
+            PuzzlePicker.PuzzleCaller();
         }
 
         public static void AnswerDisplay (string answer)
@@ -22,7 +22,7 @@ namespace AdventOfCode2018
 
             if (keyinfo.Key != ConsoleKey.Escape)
             {
-                PuzzlePicker.PuzzleSwitch();
+                PuzzlePicker.PuzzleCaller();
             }
         }
     }

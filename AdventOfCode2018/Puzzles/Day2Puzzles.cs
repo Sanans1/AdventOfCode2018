@@ -65,17 +65,13 @@ namespace AdventOfCode2018.Puzzles
                             if (packageID[i] == otherPackageID[i])
                             {
                                 answer += packageID[i];
+                                Program.AnswerDisplay(answer);
+                                return;
                             }
                         }
                     }
                 }
-                if (answer != null)
-                {
-                    break;
-                }
             }
-
-            Program.AnswerDisplay(answer);
         }
     }
 }
