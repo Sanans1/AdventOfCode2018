@@ -22,5 +22,21 @@ namespace AdventOfCode2018.Helpers
                 }
             }
         }
+
+        public static string OneLineReader()
+        {
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("\nPlease tell me the directory of a .txt file with your puzzle data in. E.g. C:\\Users\\Bob\\Desktop\\Puzzle1.txt");
+                    return File.ReadAllText(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("\nOops! Something is wrong with the path you entered or the file itself. Please try again or check the file.");
+                }
+            }
+        }
     }
 }
