@@ -1,11 +1,8 @@
 ﻿using AdventOfCode2018.Helpers;
-using AdventOfCode2018.Models;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 
 namespace AdventOfCode2018.Puzzles
 {
